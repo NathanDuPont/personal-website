@@ -1,5 +1,17 @@
-.navbar .navbar-nav {
-    float: none;
+.nav-item {
+    float: left;
+    width: 20%;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.navbar-nav > a {
+    color: #F5F5F5 !important;
+}
+
+.active {
+    font-weight: 500;
+    border-bottom: 5px solid #F5F5F5;
 }
 
 .navbar .navbar-collapse {
@@ -9,8 +21,4 @@
 .nav-spacing {
     /*margin:0px 15%*/
     width: 100%;
-}
-
-.nav-five-spacing {
-    margin: 0px 6%;
 }
