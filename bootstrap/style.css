@@ -1,0 +1,16 @@
+.navbar .navbar-nav {
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.nav-spacing {
+    /*margin:0px 15%*/
+    width: 100%;
+}
+
+.nav-five-spacing {
+    margin: 0px 6%;
+}

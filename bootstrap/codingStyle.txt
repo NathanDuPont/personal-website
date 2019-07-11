@@ -1,0 +1,22 @@
+-- CSS Coding Style --
+.[CLASS] {
+    *Div Settings*
+    [SIZE]
+    -width
+    -height
+    [POSITION]
+    -float
+    -margin
+    -padding
+    -left/right
+    -top/bottom
+    [COLOR]
+    -background-color
+    [APPEARANCE]
+    -border
+
+    *Text Settings*
+    [COLOR]
+    [ALIGNMENT]
+    [FONT]
+}

@@ -1,0 +1,42 @@
+Jan 25 00:37:59 10.71.54.2 u96299817 Connection from 10.71.54.2 port 33322 on 74.208.59.6 port 22
+Jan 25 00:37:59 10.71.54.2 u96299817 Accepted password for u96299817 from 10.71.54.2 port 33322 ssh2
+Jan 25 00:38:00 10.71.54.2 u96299817 Starting session: subsystem 'sftp' for u96299817 from 10.71.54.2 port 33322
+Jan 25 00:38:00 10.71.54.2 u96299817 session opened for local user u96299817 from [10.71.54.2]
+Jan 25 00:38:00 10.71.54.2 u96299817 Connection closed by 10.71.54.2
+Jan 25 00:38:00 10.71.54.2 u96299817 session closed for local user u96299817 from [10.71.54.2]
+Jan 25 00:38:00 10.71.54.2 u96299817 Connection from 10.71.54.2 port 33696 on 74.208.59.6 port 22
+Jan 25 00:38:00 10.71.54.2 u96299817 Accepted password for u96299817 from 10.71.54.2 port 33696 ssh2
+Jan 25 00:38:00 10.71.54.2 u96299817 Starting session: subsystem 'sftp' for u96299817 from 10.71.54.2 port 33696
+Jan 25 00:38:00 10.71.54.2 u96299817 session opened for local user u96299817 from [10.71.54.2]
+Jan 25 00:40:44 10.71.54.2 u96299817 open "/logs/traffic.html/.htaccess" flags READ mode 0666
+Jan 25 00:40:44 10.71.54.2 u96299817 close "/logs/traffic.html/.htaccess" bytes read 23 written 0
+Jan 25 00:40:44 10.71.54.2 u96299817 [10.71.54.2|get|0|23|0|0|0|2f6c6f67732f747261666669632e68746d6c2f2e6874616363657373|]
+Jan 25 00:40:44 10.71.54.2 u96299817 open "/logs/traffic.html/index.html" flags READ mode 0666
+Jan 25 00:40:44 10.71.54.2 u96299817 close "/logs/traffic.html/index.html" bytes read 2451 written 0
+Jan 25 00:40:44 10.71.54.2 u96299817 [10.71.54.2|get|0|2451|0|0|0|2f6c6f67732f747261666669632e68746d6c2f696e6465782e68746d6c|]
+Jan 25 00:40:44 10.71.54.2 u96299817 open "/logs/traffic.html/01.html" flags READ mode 0666
+Jan 25 00:40:46 10.71.54.2 u96299817 close "/logs/traffic.html/01.html" bytes read 1325 written 0
+Jan 25 00:40:46 10.71.54.2 u96299817 [10.71.54.2|get|2|1325|0|0|0|2f6c6f67732f747261666669632e68746d6c2f30312e68746d6c|]
+Jan 25 00:40:46 10.71.54.2 u96299817 open "/logs/traffic.html/.md5sums" flags READ mode 0666
+Jan 25 00:40:46 10.71.54.2 u96299817 sent status Permission denied
+Jan 25 00:40:46 10.71.54.2 u96299817 open "/logs/.htaccess" flags READ mode 0666
+Jan 25 00:40:46 10.71.54.2 u96299817 close "/logs/.htaccess" bytes read 267 written 0
+Jan 25 00:40:46 10.71.54.2 u96299817 [10.71.54.2|get|0|267|0|0|0|2f6c6f67732f2e6874616363657373|]
+Jan 25 00:40:46 10.71.54.2 u96299817 open "/logs/info.pl" flags READ mode 0666
+Jan 25 00:40:46 10.71.54.2 u96299817 close "/logs/info.pl" bytes read 4176 written 0
+Jan 25 00:40:46 10.71.54.2 u96299817 [10.71.54.2|get|0|4176|0|0|0|2f6c6f67732f696e666f2e706c|]
+Jan 25 00:40:47 10.71.54.2 u96299817 open "/logs/info.php5" flags READ mode 0666
+Jan 25 00:40:47 10.71.54.2 u96299817 close "/logs/info.php5" bytes read 21 written 0
+Jan 25 00:40:47 10.71.54.2 u96299817 [10.71.54.2|get|0|21|0|0|0|2f6c6f67732f696e666f2e70687035|]
+Jan 25 00:40:47 10.71.54.2 u96299817 open "/logs/info.py" flags READ mode 0666
+Jan 25 00:40:47 10.71.54.2 u96299817 close "/logs/info.py" bytes read 6384 written 0
+Jan 25 00:40:47 10.71.54.2 u96299817 [10.71.54.2|get|0|6384|0|0|0|2f6c6f67732f696e666f2e7079|]
+Jan 25 00:40:47 10.71.54.2 u96299817 open "/logs/traffic.db" flags READ mode 0666
+Jan 25 00:40:47 10.71.54.2 u96299817 close "/logs/traffic.db" bytes read 12288 written 0
+Jan 25 00:40:47 10.71.54.2 u96299817 [10.71.54.2|get|0|12288|0|0|0|2f6c6f67732f747261666669632e6462|]
+Jan 25 00:40:47 10.71.54.2 u96299817 open "/logs/last_traffic" flags READ mode 0666
+Jan 25 00:40:47 10.71.54.2 u96299817 close "/logs/last_traffic" bytes read 0 written 0
+Jan 25 00:40:47 10.71.54.2 u96299817 [10.71.54.2|get|0|0|0|0|0|2f6c6f67732f6c6173745f74726166666963|]
+Jan 25 00:40:47 10.71.54.2 u96299817 open "/logs/access.log.04.4.gz" flags READ mode 0666
+Jan 25 00:40:47 10.71.54.2 u96299817 close "/logs/access.log.04.4.gz" bytes read 414 written 0
+Jan 25 00:40:47 10.71.54.2 u96299817 [10.71.54.2|get|0|414|0|0|0|2f6c6f67732f6163636573732e6c6f672e30342e342e677a|]
