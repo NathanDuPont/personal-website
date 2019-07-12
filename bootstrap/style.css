@@ -19,6 +19,30 @@
 }
 
 .nav-spacing {
-    /*margin:0px 15%*/
     width: 100%;
 }
+
+#headshot-img {
+    width: 100%;
+    z-index: 1;
+}
+
+.row-spacer {
+    margin-top: 200px;
+}
+
+.img-spacing {
+    display: block;
+    position: relative;
+    width: 45vw;
+    margin: 0px auto;
+    top: -25vh;
+}
+
+.background-logo-container {
+    height: 500px;
+    margin-top: 250px;
+    font-size: 12vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
