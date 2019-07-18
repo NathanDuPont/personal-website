@@ -55,3 +55,14 @@
     height:75px;
     margin:0px;
 }
+
+#login-dropdown {
+    display:block;
+    position:absolute;
+    top:56px;
+    left:83vw;
+    width:17vw;
+    height:100px;
+    margin:0;
+    background-color:#E3E3E3;
+}

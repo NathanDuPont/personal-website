@@ -5,9 +5,6 @@
 <html>
   <head>
     <title>Home</title>
-    <!--
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    -->
     <link href="style.css" rel="stylesheet">
     <link href="imports/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="imports/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,7 +13,6 @@
     <link href="imports/bootstrap/dist/css/bootstrap-reboot.css" rel="stylesheet">
     <link href="imports/bootstrap/dist/css/bootstrap-reboot.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--<meta http-equiv="Refresh" content="0;url=placeholder.html" />-->
   </head>
   <script src="imports/bootstrap/dist/js/bootstrap.bundle.js"></script>
   <script src="imports/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -34,6 +30,13 @@
           <a class="nav-item nav-link" href="Resume.html">Resume</a>
           <a class="nav-item nav-link" href="Projects.html">Projects</a>
           <a class="nav-item nav-link" href="Contact.html">Contact</a>
+          <a class="nav-item nav-link dropdown-toggle" href="#" id="navBarLogin" onclick="toggleLoginMenu()">Login</a>
+          <div class="dropdown-menu" id="login-dropdown">
+            <p>Username</p>
+            <input type="text" class="user-text-field" id="username-text-field">
+            <p>Password</p>
+            <input type="password" class="user-text-field" id="password-text-field">
+          </div>
         </div>
       </div>
 
@@ -57,14 +60,18 @@
     </div>
   </body>
   <script>
+    var loginMenuOpen = false;
+
     function onload() {
 
     }
 
+    function toggleLoginMenu() {
+
+    }
+
     window.addEventListener("load", function() {
-      for(i = 0; i < 12; i++) {
-        
-      }
+
     });
   </script>
 </html>
