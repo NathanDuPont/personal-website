@@ -40,9 +40,18 @@
 }
 
 .background-logo-container {
-    height: 500px;
-    margin-top: 250px;
+    height: 550px;
+    padding-top: 250px;
     font-size: 12vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.body-content {
+    width:100%;
+    margin:0px;
+}
+
+.body-header-accent #hello-world-animation {
+    height:75px;
+    margin:0px;
+}
