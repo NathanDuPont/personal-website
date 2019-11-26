@@ -1,3 +1,9 @@
+:root {
+    --primary-color:#E3E3E3;
+    --secondary-color:#999999;
+    --off-white:#F5F5F5;
+}
+
 .nav-item {
     float: left;
     width: 20%;
@@ -6,12 +12,16 @@
 }
 
 .navbar-nav > a {
-    color: #F5F5F5 !important;
+    color: var(--off-white) !important;
 }
 
 .active {
     font-weight: 500;
-    border-bottom: 5px solid #F5F5F5;
+    border-bottom: 5px solid var(--off-white);
+}
+
+.navbar {
+    background-color:var(--secondary-color);
 }
 
 .navbar .navbar-collapse {
@@ -35,8 +45,8 @@
     display: block;
     position: relative;
     width: 45vw;
-    margin: 0px auto;
-    top: -25vh;
+    margin: 0 auto;
+    top: -225px;
 }
 
 .background-logo-container {
@@ -46,14 +56,21 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+#backgroundImg {
+    display:block;
+    position:absolute;
+    top:56px;
+    border-bottom:5px solid var(--secondary-color);
+}
+
 .body-content {
     width:100%;
-    margin:0px;
+    margin:0;
 }
 
 .body-header-accent #hello-world-animation {
     height:75px;
-    margin:0px;
+    margin:0;
 }
 
 #login-dropdown {
@@ -64,7 +81,7 @@
     width:17vw;
     height:100px;
     margin:0;
-    background-color:#E3E3E3;
+    background-color:var(--primary-color);
     visibility:hidden;
 }
 
