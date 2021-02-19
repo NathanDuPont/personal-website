@@ -14,6 +14,6 @@ jobs:
     - name: Upload files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ${{ secrets.prod_ftp_url }}
-        username: ${{ secrets.prod_ftp_username }}
-        password: ${{ secrets.prod_ftp_password }}
+        server: ${{ secrets.PROD_FTP_URL }}
+        username: ${{ secrets.PROD_FTP_USERNAME }}
+        password: ${{ secrets.PROD_FTP_PASSWORD }}
