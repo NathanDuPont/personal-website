@@ -1,19 +1,17 @@
 on: 
   workflow_dispatch:
     branches:
-      - master 
-name: Deploy to QA
+      - ftp-deploy-actions
+name: Deploy to Production
 jobs:
   web-deploy:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: Get latest code
+    - name: Checkout Repository
       uses: actions/checkout@v2.3.2
     
-    - name: Upload files
-      uses: SamKirkland/FTP-Deploy-Action@4.0.0
-      with:
-        server: ${{ secrets.QA_FTP_URL }}
-        username: ${{ secrets.QA_FTP_USERNAME }}
-        password: ${{ secrets.QA_FTP_PASSWORD }}
+    - name: Upload Files Over SFTP
+      run: |
+        cd $GITHUB_WORKSPACE
+        ls
