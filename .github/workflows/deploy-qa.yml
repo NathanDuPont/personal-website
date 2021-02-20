@@ -11,4 +11,7 @@ jobs:
     - name: Upload Files Over SFTP
       run: |
         cd $GITHUB_WORKSPACE
-        ls
+        sftp ${{ secrets.PROD_FTP_USERNAME }}@${{ secrets.PROD_FTP_URL }}
+        ${{ secrets.PROD_FTP_PASSWORD }}
+        put -r ./web-deploy/*
+        exit
