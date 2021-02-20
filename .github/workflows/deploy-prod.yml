@@ -1,7 +1,7 @@
 on: 
   workflow_dispatch:
     branches:
-      - ftp-deploy-actions
+      - master 
 name: Deploy to Production
 jobs:
   web-deploy:
@@ -15,3 +15,5 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE
         ls
+        sftp ${{ secrets.PROD_FTP_USERNAME }}@${{ secrets.PROD_FTP_URL }}
+        ${{ secrets.PROD_FTP_PASSWORD }}
