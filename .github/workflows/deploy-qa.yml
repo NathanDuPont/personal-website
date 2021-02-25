@@ -1,18 +1,22 @@
+on: 
+  workflow_dispatch:
+    branches:
+      - master 
 name: Deploy to QA
-on: [workflow_dispatch]
 jobs:
   web-deploy:
-    name: Deploy to QA over SFTP
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Repository
+    - name: Get latest code
       uses: actions/checkout@v2.3.2
     
-    - name: Deploy to QA Server
+    - name: Deploy to server
       uses: easingthemes/ssh-deploy@v2.1.5
       env:
         SSH_PRIVATE_KEY: ${{ secrets.QA_SERVER_SSH_KEY }}
         ARGS: "-rltgoDzvO"
         SOURCE: "dist/"
-        REMOTE_HOST: ${{ secrets.QA_SFTP_URL }}
-        REMOTE_USER: ${{ secrets.QA_SFTP_USERNAME }}
+        REMOTE_HOST: ${{ secrets.QA_SERVER_HOST }}
+        REMOTE_USER: ${{ secrets.QA_SERVER_USER }}
+        TARGET: ${{ secrets.QA_SERVER_TARGET }}
