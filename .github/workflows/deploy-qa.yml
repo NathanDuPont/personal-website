@@ -10,13 +10,11 @@ jobs:
     steps:
     - name: Get latest code
       uses: actions/checkout@v2.3.2
-    
+
     - name: Deploy to server
-      uses: easingthemes/ssh-deploy@v2.1.5
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.QA_SERVER_SSH_KEY }}
-        ARGS: "-rltgoDzvO"
-        SOURCE: "dist/"
-        REMOTE_HOST: ${{ secrets.QA_SERVER_HOST }}
-        REMOTE_USER: ${{ secrets.QA_SERVER_USER }}
-        TARGET: ${{ secrets.QA_SERVER_TARGET }}
+      run: |
+        cd $GITHUB_WORKSPACE/${{ github.event.repository.name }}/dist
+        sftp ${{ secrets.QA_SERVER_USER }}@${{ secrets.QA_SERVER_HOST }}
+        ${{ secrets.QA_SERVER_PASSWORD }}
+        put *
+        exit
