@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require("path");
 const webpack = require("webpack");
 
@@ -24,7 +25,12 @@ module.exports = {
       }
     ]
   },
-  resolve: { extensions: ["*", ".js", ".jsx", ".tx", ".tsx"] },
+  resolve: { 
+    extensions: ["*", ".js", ".jsx", ".tx", ".tsx"],
+    alias: {
+      "react-dom": "@hot-loader/react-dom"
+    } 
+  },
   output: {
     path: path.resolve(__dirname, "dist/"),
     publicPath: "/dist/",
@@ -32,9 +38,16 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, "dist/"),
-    port: 3000,
-    publicPath: "http://localhost:3000/dist/",
+    compress: true,
+    port: 3400,
     hotOnly: true
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(), 
+    new HtmlWebpackPlugin({
+        hash: true,
+        title: "N//D",
+        template: "./src/index.html",
+        filename: "./index.html"
+    })]
 };
