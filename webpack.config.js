@@ -40,6 +40,9 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(), 
     new HtmlWebpackPlugin({
-        title: "N//D"
+        hash: true,
+        title: "N//D",
+        template: "./src/index.html",
+        filename: "./index.html"
     })]
 };

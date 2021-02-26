@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/NathanDuPont/personal-website#readme",
   "dependencies": {
+    "@types/html-webpack-plugin": "^3.2.4",
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
@@ -36,7 +37,7 @@
     "@types/lodash": "^4.14.168",
     "@types/react": "^17.0.2",
     "babel-loader": "^8.2.2",
-    "css-loader": "^5.0.2",
+    "css-loader": "^5.1.0",
     "html-webpack-plugin": "^5.2.0",
     "lodash": "^4.17.21",
     "react": "^17.0.1",
