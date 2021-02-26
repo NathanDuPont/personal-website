@@ -18,3 +18,11 @@ Source code for my personal website, side robotics projects, and other web-appli
 [Webpack - Hot Module Replacement](https://webpack.js.org/guides/hot-module-replacement/)
 
 [Webpack - HTML Plugin](https://webpack.js.org/plugins/html-webpack-plugin/)
+
+[React Redux Quick Start Guide](https://react-redux.js.org/introduction/quick-start)
+
+[React Redux Tutorial](https://react-redux.js.org/introduction/basic-tutorial#providing-the-store)
+
+[React Redux Example](https://codesandbox.io/s/9on71rvnyo?file=/src/redux/reducers/todos.js)
+
+[Redux with Typescript](https://redux.js.org/recipes/usage-with-typescript)

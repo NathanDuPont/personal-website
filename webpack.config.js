@@ -33,7 +33,6 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "dist/"),
-    publicPath: "/dist/",
     filename: "bundle.js"
   },
   devServer: {
@@ -47,7 +46,6 @@ module.exports = {
     new HtmlWebpackPlugin({
         hash: true,
         title: "N//D",
-        template: "./src/index.html",
-        filename: "./index.html"
+        template: path.resolve(__dirname, "src/index.html")
     })]
 };
