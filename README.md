@@ -16,3 +16,5 @@ Source code for my personal website, side robotics projects, and other web-appli
 [Webpack - Sass Documentation](https://webpack.js.org/loaders/sass-loader/)
 
 [Webpack - Hot Module Replacement](https://webpack.js.org/guides/hot-module-replacement/)
+
+[Webpack - HTML Plugin](https://webpack.js.org/plugins/html-webpack-plugin/)
