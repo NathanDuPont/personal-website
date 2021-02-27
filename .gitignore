@@ -1,3 +1,7 @@
+# Distribution
+dist/*
+!dist/.keep
+
 # Hot Application Files
 *.hot-update.js
 *.hot-update.json

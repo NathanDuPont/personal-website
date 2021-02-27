@@ -1,5 +1,5 @@
-import { RootState } from "./rootReducer";
+import { IState } from "./rootReducer";
 
-export const getCurrentWindow = (state: RootState) => state.window;
+export const getCurrentWindow = (state: IState) => state.window;
 
-export const getCurrentApp = (state: RootState) => state.app;
+export const getCurrentApp = (state: IState) => state.app;

@@ -1,10 +1,10 @@
-import { CHANGE_APP, APP_TYPE, AppState, ChangeDisplayActionTypes } from "../../actionTypes";
+import { CHANGE_APP, APP_TYPE, IAppState, IChangeDisplayActionTypes } from "../../actionTypes";
 
-const initialState: AppState = {
+const initialState: IAppState = {
     app: APP_TYPE.HOME
 };
 
-export function appReducer(state=initialState, action: ChangeDisplayActionTypes): AppState {
+export function appReducer(state=initialState, action: IChangeDisplayActionTypes): IAppState {
     switch (action.type) {
         case CHANGE_APP:
             return {

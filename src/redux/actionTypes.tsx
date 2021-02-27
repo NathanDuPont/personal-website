@@ -13,22 +13,22 @@ export enum APP_TYPE {
     DASHBOARD = 1
 }
 
-export interface WindowState {
+export interface IWindowState {
     window: WINDOW_TYPE
 }
 
-export interface AppState {
+export interface IAppState {
     app: APP_TYPE
 }
 
-interface ChangeWindowAction {
+interface IChangeWindowAction {
     type: typeof CHANGE_WINDOW
     payload: WINDOW_TYPE
 }
 
-interface ChangeAppAction {
+interface IChangeAppAction {
     type: typeof CHANGE_APP
     payload: APP_TYPE
 }
 
-export type ChangeDisplayActionTypes = ChangeWindowAction | ChangeAppAction;
+export type IChangeDisplayActionTypes = IChangeWindowAction | IChangeAppAction;
